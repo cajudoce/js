@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Eventos DOM - Somando Números</title>
+  <link rel="stylesheet" type="text/css" href="eventosdom.css">
+</head>
+<body>
+
+  <div id="cHeader">
+  <h1>Eventos DOM - Soma de 02 Números</h1>    
+  </div>
+
+  <div id="cMain">
+
+    <h2>Somando Valores (n1 + n2):</h2>
+
+    <div class="box"id="cBox">
+      N1: <input type="number" name="txtn1" id="cTxtn1"> &nbsp; N2: <input type="number" name="txtn2" id="cTxtn2"> &nbsp; <input type="button" value="Somar" onclick="Somar()">
+    <div id="cRes">Resultado:</div>
+    </div>
+
+  </div>
+  <script>
+    function Somar() {
+        //soma de dois inputs
+      var tn1 = window.document.getElementById('cTxtn1');
+      var tn2 = window.document.getElementById('cTxtn2');
+      var res = window.document.getElementById('cRes');
+      var n1 = Number.parseFloat(tn1.value);
+      var n2 = Number.parseFloat(tn2.value);
+      var s = n1 + n2;
+      res.innerHTML = `A soma de ${n1} e de ${n2} é igual a <span id="cSpan1">${s}</span>.`;
+    }
+  </script>
+</body>
+</html>

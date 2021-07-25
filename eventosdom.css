@@ -1,0 +1,46 @@
+@charset "UTF-8"; 
+/*Características e atributos Gerais*/
+body {
+	margin: 0 auto;
+}
+html {
+	font-size: 10px;
+}
+#cHeader {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+input {
+	width: 80px;
+}
+.box, h2 {
+	margin-left: 20px;
+}
+#cRes {
+	margin-top: 20px;
+}
+#cSpan1 {
+	font: weight;
+	text-decoration: underline;
+	color: red;
+}
+/*Tipografia*/
+h1 {
+	font-size: 3.2em;
+}
+h2 {
+	font-size: 2.8em;
+}
+h3 {
+	font-size: 2.4em;
+}
+h4 {
+	font-size: 2.0em;
+}
+p {
+	font-size: 1.4em;
+}
+.box {
+	font-size: 1.6em;
+}
